@@ -43,3 +43,10 @@ kubectl run -it --rm --image=mysql:5.6 mysql-client -- mysql -h 10.4.1.36
 		    Mounts:
 		      /var/lib/mysql from mysql-persistent-storage (rw)
 		      /var/run/secrets/kubernetes.io/serviceaccount from default-token-0j8pc (ro)
+
+### Issue 3:
+
+https://kubernetes.io/docs/tasks/run-application/run-replicated-stateful-application/#deploy-mysql
+
+Remove cpu resource limits at two places for the example to work
+
